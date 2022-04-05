@@ -1,38 +1,495 @@
+
+:root {
+  --primary-font: 'Cinzel Decorative', serif;
+  --primary-color: #012623;
+  --secondary-color: #30bf97;
+}
+
+
 .App {
-  text-align: center;
+  padding: 1rem;
+}
+/* header */
+
+.nav-icon {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav ul {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary-color);
+  margin: 0;
+  padding: 3rem;
+  list-style-type: none;
+  transition: all .2s;
+  z-index: 2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav li a {
+  text-decoration: none;
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  font-weight: 900;
+  font-size: 1.5rem;
+  transition: all .3s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav li {
+  margin-bottom: 1rem;
+}
+
+.exit {
+  z-index: 3;
+}
+
+.exit polygon {
+  transition: all .2s;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social svg {
+  margin: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.social-icon {
+  fill: var(--secondary-color);
+  transition: all .3s;
+}
+
+.exit polygon:hover, .social-icon:hover, nav a:hover {
+  color: #fff;
+  fill: #fff;
+}
+
+.hamburger rect {
+  transition: all .2s;
+}
+
+.hamburger:hover rect{
+  fill: var(--primary-color)
+}
+
+/* template mobile */
+
+.profile {
+  display: none;
+}
+
+.rect {
+  background-color: var(--primary-color);
+  transition: all .3s;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.template {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 2rem;
+  gap: .5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.rect-1 {
+  height: 2.8rem;
+  width: 55%;
+  margin-left: 28%;
+  order:1;
+  -webkit-animation-name: rect1move;
+          animation-name: rect1move;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.rect-2 {
+  height: 1.1rem;
+  width: 92%;
+  margin-left: 1rem;
+  order:2;
+  -webkit-animation-name: rect2move;
+          animation-name: rect2move;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.rect-3 {
+  height: 2rem;
+  width: 92%;
+  order: 5;
+  -webkit-animation-name: rect3move;
+          animation-name: rect3move;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.rect-4 {
+  height: 1.7rem;
+  width: 80%;
+  margin-left: 3rem;
+  order: 7;
+  -webkit-animation-name: rect1move;
+          animation-name: rect1move;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.rect-5 {
+  height: 2.7rem;
+  width: 97%;
+  order: 8;
+  -webkit-animation-name: rect3move;
+          animation-name: rect3move;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.rect-6 {
+  height: 8rem;
+  width: 100%;
+}
+
+.rect-7 {
+  height: 8rem;
+  width: 100%;
+}
+
+.rect-8 {
+  height: 8rem;
+  width: 100%;
+}
+
+.home {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  font-family: var(--primary-font);
+  color: var(--secondary-color)
+}
+
+.home a {
+  display: contents;
+}
+
+.home .writing {
+  order: 1;
+}
+
+.home .graphic{
+  order: 2;
+}
+.home .dev{
+  order: 3;  
+}
+
+.heading {
+  display: flex;
+  position: relative;
+}
+
+.heading span {
+  font-weight: 900;
+  font-size: 5rem;
+  margin: 0 1rem;
+}
+
+.heading h2{
+  font-size: 1.5rem;
+  z-index: 1;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+}
+
+.heading a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.heading a:hover .rect {
+  transform: translateX(-250px);
+  -webkit-transform: translateX(-250px);
+  -moz-transform: translateX(-250px);
+  -ms-transform: translateX(-250px);
+  -o-transform: translateX(-250px);
+}
+
+.heading a:hover h2{
+  color: #fff;
+}
+
+.graphic a:hover .rect {
+  transform: translateX(250px);
+  -webkit-transform: translateX(250px);
+  -moz-transform: translateX(250px);
+  -ms-transform: translateX(250px);
+  -o-transform: translateX(250px);
+}
+
+
+.graphic h2 {
+  order: 3;
+}
+
+.graphic span {
+  order: 2;
+}
+
+.graphic div {
+  order: 1 !important;
+}
+
+/* mobile animations */
+
+@-webkit-keyframes rect1move {
+  0%{
+    transform: translateX(0);
   }
-  to {
-    transform: rotate(360deg);
+
+  100% {
+    transform: translateX(-2rem);
   }
+}
+
+@keyframes rect1move {
+  0%{
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-2rem);
+  }
+}
+
+@-webkit-keyframes rect2move {
+  0%{
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-1rem);
+  }
+}
+
+@keyframes rect2move {
+  0%{
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-1rem);
+  }
+}
+
+
+@-webkit-keyframes rect3move {
+  0%{
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(1rem);
+  }
+}
+
+
+@keyframes rect3move {
+  0%{
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(1rem);
+  }
+}
+
+.template div:nth-child(3) {
+
+order: 3
+}
+
+/* cards  */
+
+.card img, .article img {
+  width: 100%;
+
+}
+
+.card img {
+  height: 150px;
+  object-fit: cover;
+}
+
+.cards {
+  order: 3;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-text {
+  padding: 1rem;
+}
+
+.card-text h3, .card-text p {
+  font-family: var(--primary-font);
+  color: #fff;
+}
+
+.card-text p {
+  font-size: .8rem;
+  height: 150px;
+}
+
+.card-text h3 {
+  font-weight: 900;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.card-text a {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: .5rem .75rem;
+  background-color: var(--secondary-color);
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.card-text a:hover {
+  background-color: #fff;
+}
+
+.card-text a.dev-visit {
+  margin-bottom: .5rem;
+}
+
+/* article */
+
+.article {
+  order: 3;
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+}
+
+.article h3{
+  font-size: 2rem;
+  font-family: var(--primary-font);
+}
+
+/* route transitions  */
+
+.App {
+  /* position: relative; */
+}
+
+.transition {
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  display: contents;
+}
+
+.transition-enter {
+  opacity: 0;
+  transform: scale(1.1);
+  display: contents;
+
+}
+
+.transition-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+  display: contents;
+
+}
+
+.transition-exit {
+  opacity: 1;
+  transform: scale(1);
+  display: contents;
+
+}
+
+.transition-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+  display: contents;
+
+}
+
+.active {
+  color: var(--secondary-color);
 }

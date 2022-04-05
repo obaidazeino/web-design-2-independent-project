@@ -1,23 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
+import "./media.css"
+import logo from "./images/logo.svg"
+import Navigation from "./components/Navigation"
+import TemplateWithRouter from "./components/Template"
+import {Switch, Route, withRouter, Link, useLocation} from "react-router-dom"
+import Home from "./pages/Home"
+import Work from "./pages/Work"
+import WorkDetails from "./pages/WorkDetails"
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+
+
 
 function App() {
+  const location = useLocation()
+
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <Link to="/"><img src={logo} alt="logo"/></Link>
+        <Navigation/>
       </header>
+      <main>
+        <TemplateWithRouter>
+        <TransitionGroup>
+        <CSSTransition
+          timeout={300}
+          classNames="transition"
+          key={location.key}
+          >
+          <Switch>
+            <Route exact path="/"><Home /></Route>
+            <Route exact path="/:workPage"><Work/></Route>
+            <Route path="/:workPage/:detailsPage"><WorkDetails/></Route>
+          </Switch>
+          </CSSTransition>
+      </TransitionGroup>
+        </TemplateWithRouter>
+      </main>
     </div>
   );
 }
