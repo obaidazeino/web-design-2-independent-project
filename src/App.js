@@ -1,6 +1,7 @@
 import './App.css';
 import "./media.css"
-import logo from "./images/logo.svg"
+import logo from "./images/logo.png"
+import faded from "./images/faded.png"
 import Navigation from "./components/Navigation"
 import TemplateWithRouter from "./components/Template"
 import {Switch, Route, withRouter, Link, useLocation} from "react-router-dom"
@@ -22,6 +23,7 @@ function App() {
         <Navigation/>
       </header>
       <main>
+        <img src={faded} alt="logo" className='faded'/>
         <TemplateWithRouter>
         <TransitionGroup>
         <CSSTransition

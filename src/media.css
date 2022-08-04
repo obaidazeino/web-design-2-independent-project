@@ -32,7 +32,8 @@
 
     nav li a {
         color: var(--primary-color);
-        font-size: 1rem;
+        font-size: .9rem;
+        font-weight: normal;
     }
     
     nav li a:hover {
@@ -294,14 +295,10 @@
       }
 
       /* cards */
-      
+/*       
       .card:hover {
-        transform: scaleY(1.2);
-        -webkit-transform: scaleY(1.2);
-        -moz-transform: scaleY(1.2);
-        -ms-transform: scaleY(1.2);
-        -o-transform: scaleY(1.2);
-      }
+        transform: scaleY(1.1);
+      } */
 
       .cards {
           display: grid;
@@ -324,9 +321,17 @@
 
         /* articles */
     .article {
-        max-width: 29rem;
+        max-width: 38rem;
     }
 
 
 }
 
+@media only screen and (min-width: 81em)  {
+
+  .cards {
+    grid-template-columns: 12rem 12rem 12rem;
+  }
+
+
+}

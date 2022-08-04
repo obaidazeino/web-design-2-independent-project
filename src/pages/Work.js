@@ -10,7 +10,7 @@ const Work = () => {
     let content = data.find(item => item.id === workPage).content.map(item =>
         {return(
             <div className="card">
-                {item.image && <img src={item.image}/>}
+                {item.image && <div className='img-cont'><img src={item.image}/></div>}
                 <div className="card-text">
                     <h3>{item.title}</h3>
                     <p>{item.body}</p>

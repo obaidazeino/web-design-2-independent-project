@@ -9,7 +9,22 @@
 .App {
   padding: 1rem;
 }
+
+
+
+.faded {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  opacity: 50%;
+  z-index: -1;
+}
 /* header */
+
+header img {
+  width: 64px;
+}
 
 .nav-icon {
   position: fixed;
@@ -61,8 +76,8 @@ nav li {
 
 .social svg {
   margin: 1rem;
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .social-icon {
@@ -355,6 +370,17 @@ order: 3
 .card img {
   height: 150px;
   object-fit: cover;
+  overflow: hidden;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+}
+
+.img-cont {
+  height: 150px;
+  overflow: hidden;
 }
 
 .cards {
@@ -401,6 +427,7 @@ order: 3
 }
 
 .card-text a {
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   margin: 0 auto;
   display: block;
@@ -424,6 +451,14 @@ order: 3
   background-color: #fff;
 }
 
+.card:hover img  {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
 .card-text a.dev-visit {
   margin-bottom: .5rem;
 }
@@ -432,7 +467,7 @@ order: 3
 
 .article {
   order: 3;
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
   padding: 1rem;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -445,6 +480,10 @@ order: 3
 .article h3{
   font-size: 2rem;
   font-family: var(--primary-font);
+}
+
+.article p {
+  font-family: 'Roboto', sans-serif;
 }
 
 /* route transitions  */

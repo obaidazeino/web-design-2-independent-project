@@ -1,14 +1,61 @@
 
 import infographic from "./images/gd/infographic.jpg"
 import wadduha from "./images/gd/wadduha.png"
-import pets from "./images/gd/pets.jpg"
+import pets from "./images/gd/pets.png"
 import politics from "./images/gd/politics.png"
-import sweeney from "./images/gd/sweeney.png"
+import sweeney from "./images/gd/sweeney.jpg"
 import symbol from "./images/gd/symbol.png"
+import type from "./images/gd/type.jpg"
+import skateboard from "./images/gd/skateboard.png"
+import wolves from "./images/gd/wolves.png"
+import tea from "./images/gd/tea.jpg"
+import yoga from "./images/gd/yoga.png"
+import swans from "./images/gd/swans.jpg"
+import lego from "./images/gd/lego.png"
 import notes from "./images/dev/notes.png"
 import soccer from "./images/dev/soccer.png"
 import blog from "./images/dev/blog.png"
 
+import pets1 from "./images/gd/pets/1.png"
+import pets2 from "./images/gd/pets/2.png"
+import pets3 from "./images/gd/pets/3.png"
+
+import sweeney1 from "./images/gd/sweeney/1.jpg"
+import sweeney2 from "./images/gd/sweeney/2.png"
+import sweeney3 from "./images/gd/sweeney/3.png"
+import sweeney4 from "./images/gd/sweeney/4.png"
+import sweeney5 from "./images/gd/sweeney/5.png"
+
+import symbol1 from "./images/gd/symbol/1.jpg"
+import symbol2 from "./images/gd/symbol/2.jpg"
+import symbol3 from "./images/gd/symbol/3.jpg"
+
+import type1 from "./images/gd/type/1.jpg"
+import type2 from "./images/gd/type/2.jpg"
+import type3 from "./images/gd/type/3.jpg"
+
+import skateboard1 from "./images/gd/skateboard/1.png"
+import skateboard2 from "./images/gd/skateboard/2.png"
+
+import wolves1 from "./images/gd/wolves/1.png"
+import wolves2 from "./images/gd/wolves/2.png"
+import wolves3 from "./images/gd/wolves/3.png"
+import wolves4 from "./images/gd/wolves/4.png"
+
+import tea1 from "./images/gd/tea/1.jpg"
+import tea2 from "./images/gd/tea/2.jpg"
+import tea3 from "./images/gd/tea/3.jpg"
+import tea4 from "./images/gd/tea/4.jpg"
+import tea5 from "./images/gd/tea/5.png"
+
+import swans1 from "./images/gd/swans/1.jpg"
+import swans2 from "./images/gd/swans/2.png"
+
+import lego1 from "./images/gd/lego/1.png"
+import lego2 from "./images/gd/lego/2.png"
+import lego3 from "./images/gd/lego/3.jpg"
+import lego4 from "./images/gd/lego/4.jpg"
+import lego5 from "./images/gd/lego/5.jpg"
 
 
 export default [
@@ -151,38 +198,93 @@ export default [
                 id: "1",
                 image: infographic,
                 title: "Canadian Infographic",
-                body: "Raw data turned into a dynamic, interesting and informative infographic"
+                body: "Raw data turned into a dynamic, interesting and informative infographic",
+                imgExtended: []
             },
             {
                 id: "2",
                 image: politics,
                 title: "2019 politics cartoon",
-                body: "Playful flashes of 2019 politics if world leaders were high school teenagers"
+                body: "Playful flashes of 2019 politics if world leaders were high school teenagers",
+                imgExtended: []
             },
             {
                 id: "3",
                 image: pets,
                 title: "Pet Compnay Logo",
-                body: "Logo concepts for a green pet products company"
+                body: "Logo concepts for a green pet products company",
+                imgExtended: [pets1, pets2, pets3]
             },
             {
                 id: "4",
                 image: sweeney,
                 title: "Sweeny Todd poster",
-                body: "I was tasked with designing a dynamic and creative poster for the Ottawa Little Theatre for the play “Sweeney Todd” by Christopher Bond."
+                body: "I was tasked with designing a dynamic and creative poster for the Ottawa Little Theatre for the play “Sweeney Todd” by Christopher Bond.",
+                imgExtended: [sweeney1,sweeney2, sweeney3, sweeney4, sweeney5]
             },
             {
                 id: "5",
                 image: symbol,
                 title: "Atilla the Hun Symbol",
-                body: "This is a construction and design of a symbol of quality"
+                body: "This is a construction and design of a symbol of quality.",
+                imgExtended: [symbol1, symbol2, symbol3]
             },
             {
                 id: "6",
                 image: wadduha,
                 title: "Arabic Calligraphy",
-                body: "A tribute to the magic of day and night and their eternal chasing game."
-            }
+                body: "A tribute to the magic of day and night and their eternal chasing game.",
+                imgExtended: []
+            },
+            {
+                id: "7",
+                image: type,
+                title: "Typographic Posters",
+                body: "Creative typographic posters to demonstrate the beauty of the caslon typeface.",
+                imgExtended: [type1, type2, type3]
+            },
+            {
+                id: "8",
+                image: skateboard,
+                title: "Custom Skateboard Designs",
+                body: "Lively and appealig skateboard designs.",
+                imgExtended: [skateboard1, skateboard2]
+            },
+            {
+                id: "9",
+                image: wolves,
+                title: "Bball league logo design",
+                body: "Basketball logo design inspired by NBA logos.",
+                imgExtended: [wolves1, wolves2, wolves3, wolves4]
+            },
+            {
+                id: "10",
+                image: tea,
+                title: "Tea Packaging",
+                body: "Creative packaging redesign for Tetley green Tea.",
+                imgExtended: [tea5, tea1, tea2, tea3, tea4]
+            },
+            {
+                id: "11",
+                image: yoga,
+                title: "Minimalist Yoga website",
+                body: "Minimalist responsive web design for a yoga event.",
+                imgExtended: []
+            },
+            {
+                id: "12",
+                image: swans,
+                title: "Novel cover design",
+                body: "Book cover design for the novel 'The Six Swans'.",
+                imgExtended: [swans1, swans2]
+            },
+            {
+                id: "13",
+                image: lego,
+                title: "Ad campaign for LEGO",
+                body: "Creative Advertising campaign for LEGO Products.",
+                imgExtended: [lego1, lego2, lego3, lego4, lego5]
+            },
         ]
 
     },

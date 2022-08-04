@@ -18,6 +18,11 @@ const WorkDetails = () => {
                         <p>{item}</p>
                     )
                 })} 
+                {object.imgExtended && object.imgExtended.map(item => {
+                    return(
+                        <img src={item} alt="additional project"/>
+                    )
+                })} 
             
         </div>
     )
