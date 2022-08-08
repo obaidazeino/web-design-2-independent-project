@@ -3,13 +3,37 @@
     .App {
         padding: 2rem;
     }
-    
+    *{
+      cursor: none;
+    }
     header img {
         position: fixed;
         left: 2rem;
         top: 2rem;
     }
     
+    .heading a:hover .rect {
+      transform: translateX(-250px);
+      -webkit-transform: translateX(-250px);
+      -moz-transform: translateX(-250px);
+      -ms-transform: translateX(-250px);
+      -o-transform: translateX(-250px);
+    }
+    
+    .heading a:hover h2, .heading a:hover span{
+      color: #fff;
+    }
+    
+    .graphic a:hover .rect {
+      transform: translateX(250px);
+      -webkit-transform: translateX(250px);
+      -moz-transform: translateX(250px);
+      -ms-transform: translateX(250px);
+      -o-transform: translateX(250px);
+    }
+    
+    
+
     main {
         margin-left: 4rem;
     }
@@ -323,15 +347,58 @@
     .article {
         max-width: 38rem;
     }
-
+    .movable {
+      width: 25px;
+      height: 25px;
+      background: #30bf97;
+      position: absolute;
+      z-index: 999999999;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      pointer-events: none;
+      transition: background 0.5s;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+    }
+    
+    .movable.active {
+      background: #30bf97;
+      mix-blend-mode: difference;
+      transform: translate(-50%, -50%) scale(4);
+      -webkit-transform: translate(-50%, -50%) scale(4);
+      -moz-transform: translate(-50%, -50%) scale(4);
+      -ms-transform: translate(-50%, -50%) scale(4);
+      -o-transform: translate(-50%, -50%) scale(4);
+    }
+    
+    .movable.active:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
 
 }
 
 @media only screen and (min-width: 81em)  {
 
   .cards {
-    grid-template-columns: 12rem 12rem 12rem;
+    grid-template-columns: 17rem 17rem 17rem;
   }
 
+  .card .img-cont, .card img {
+    height: 250px;
+  }
+
+  .card-text p {
+    height: 100px;
+  }
+
+  .article {
+    max-width: 53rem;
+}
 
 }

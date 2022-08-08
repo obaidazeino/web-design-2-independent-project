@@ -66,6 +66,7 @@ export default [
         content: [
             {
                 id: "1",
+                // date: 2019,
                 title: "The Artist and Society",
                 body: "The artist is the homing bird of beauty and the dew on the leaf of life...",
                 extended: [
@@ -75,6 +76,7 @@ export default [
             },
             {
                 id: "2",
+                // date: 2018,
                 title: "On depression",
                 body: "Does anyone else believe that the portrayal of depression in today’s...",
                 extended: [
@@ -90,6 +92,7 @@ export default [
             },
             {
                 id: "3",
+                // date: 2018,
                 title: "Observations #4",
                 body: "BREAKING...",
                 extended: [
@@ -109,6 +112,7 @@ export default [
             },
             {
                 id: "4",
+                // date: 2018,
                 title: "That’s it. ",
                 body: "I’m headed to the bottom",
                 extended: [
@@ -125,6 +129,7 @@ export default [
             },
             {
                 id: "5",
+                // date: 2018,
                 title: "Observations #3",
                 body: "You know that feeling when you’re casually walking down the street...",
                 extended: [
@@ -140,6 +145,7 @@ export default [
             },
             {
                 id: "6",
+                // date: 2018,
                 title: "Observations #2",
                 body: "Here I am, two weeks of being blown away by the perfection...",
                 extended: [
@@ -151,6 +157,7 @@ export default [
             },
             {
                 id: "7",
+                // date: 2018,
                 title: "Observations #1",
                 body: "To my fellow refrigerated northerners wondering what...",
                 extended: [
@@ -163,6 +170,7 @@ export default [
             },
             {
                 id: "8",
+                // date: 2017,
                 title: "My 5-year-old hero",
                 body: "It was dark, wet and terrifying. I was taking shelter in a corner...",
                 extended: [
@@ -176,6 +184,7 @@ export default [
             },
             {
                 id: "9",
+                // date: 2017,
                 title: "How to master ..",
                 body: "(For beginners like myself)",
                 extended: [
@@ -196,6 +205,7 @@ export default [
         content: [
             {
                 id: "1",
+                date: 2021,
                 image: infographic,
                 title: "Canadian Infographic",
                 body: "Raw data turned into a dynamic, interesting and informative infographic",
@@ -203,6 +213,7 @@ export default [
             },
             {
                 id: "2",
+                date: 2019,
                 image: politics,
                 title: "2019 politics cartoon",
                 body: "Playful flashes of 2019 politics if world leaders were high school teenagers",
@@ -210,6 +221,7 @@ export default [
             },
             {
                 id: "3",
+                date: 2021,
                 image: pets,
                 title: "Pet Compnay Logo",
                 body: "Logo concepts for a green pet products company",
@@ -217,6 +229,7 @@ export default [
             },
             {
                 id: "4",
+                date: 2021,
                 image: sweeney,
                 title: "Sweeny Todd poster",
                 body: "I was tasked with designing a dynamic and creative poster for the Ottawa Little Theatre for the play “Sweeney Todd” by Christopher Bond.",
@@ -224,6 +237,7 @@ export default [
             },
             {
                 id: "5",
+                date: 2021,
                 image: symbol,
                 title: "Atilla the Hun Symbol",
                 body: "This is a construction and design of a symbol of quality.",
@@ -231,6 +245,7 @@ export default [
             },
             {
                 id: "6",
+                date: 2019,
                 image: wadduha,
                 title: "Arabic Calligraphy",
                 body: "A tribute to the magic of day and night and their eternal chasing game.",
@@ -238,6 +253,7 @@ export default [
             },
             {
                 id: "7",
+                date: 2022,
                 image: type,
                 title: "Typographic Posters",
                 body: "Creative typographic posters to demonstrate the beauty of the caslon typeface.",
@@ -245,6 +261,7 @@ export default [
             },
             {
                 id: "8",
+                date: 2022,
                 image: skateboard,
                 title: "Custom Skateboard Designs",
                 body: "Lively and appealig skateboard designs.",
@@ -252,6 +269,7 @@ export default [
             },
             {
                 id: "9",
+                date: 2022,
                 image: wolves,
                 title: "Bball league logo design",
                 body: "Basketball logo design inspired by NBA logos.",
@@ -259,6 +277,7 @@ export default [
             },
             {
                 id: "10",
+                date: 2022,
                 image: tea,
                 title: "Tea Packaging",
                 body: "Creative packaging redesign for Tetley green Tea.",
@@ -266,6 +285,7 @@ export default [
             },
             {
                 id: "11",
+                date: 2022,
                 image: yoga,
                 title: "Minimalist Yoga website",
                 body: "Minimalist responsive web design for a yoga event.",
@@ -273,6 +293,7 @@ export default [
             },
             {
                 id: "12",
+                date: 2022,
                 image: swans,
                 title: "Novel cover design",
                 body: "Book cover design for the novel 'The Six Swans'.",
@@ -280,6 +301,7 @@ export default [
             },
             {
                 id: "13",
+                date: 2022,
                 image: lego,
                 title: "Ad campaign for LEGO",
                 body: "Creative Advertising campaign for LEGO Products.",
@@ -294,6 +316,7 @@ export default [
         content: [
             {
                 id: "1",
+                date: 2021,
                 image: notes,
                 title: "Notes App",
                 body: "A note taking app that saves data to localstorage and calls it.",
@@ -302,6 +325,7 @@ export default [
             },
             {
                 id: "2",
+                date: 2021,
                 image: soccer,
                 title: "Soccer Stats",
                 body: "A soccer app that calls an api and returns the data for the specified team selected.",
@@ -310,6 +334,7 @@ export default [
             },
             {
                 id: "3",
+                date: 2021,
                 image: blog,
                 title: "A blog",
                 body: "A SPA blog site",

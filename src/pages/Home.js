@@ -1,9 +1,17 @@
 import React from 'react'
 import {Link} from "react-router-dom"
+import withCursor from "../HOCs/withCursor";
 
-const Home = () => {
+const Home = (props) => {
+
+    const profile = () => props.passData(true)
+
+    profile()
+    const { onCursor } = props.context;
+
     return (
-        <div className="home">
+        <div className="home" onMouseEnter={() => onCursor("pointer")}
+        onMouseLeave={onCursor}>
             <div className="heading writing">
                 <Link to="/1"><h2>Creative <br/>Writing</h2>
                 <span>1</span>
@@ -25,4 +33,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default withCursor(Home)
