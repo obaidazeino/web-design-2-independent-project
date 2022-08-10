@@ -150,7 +150,7 @@
         width: 2rem;
         height: 62vh;
         margin-top: 10%;
-        order: 5;
+        order: 3;
         -webkit-animation-name: none;
                 animation-name: none;
         /* -webkit-animation-duration: 1s;
@@ -380,6 +380,9 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      content: 'view';
+      font-size: .25rem;
+      color:#fff;
     }
     
 
@@ -389,7 +392,24 @@
 
   .cards {
     grid-template-columns: 17rem 17rem 17rem;
+    /* grid-template-rows: repeat(auto-fit, 11rem); */
   }
+
+.cards > div:nth-child(3n){
+  transform: translateY(7rem);
+  -webkit-transform: translateY(7rem);
+  -moz-transform: translateY(7rem);
+  -ms-transform: translateY(7rem);
+  -o-transform: translateY(7rem);
+}
+
+.cards > div:nth-child(3n-1){
+  transform: translateY(3rem);
+  -webkit-transform: translateY(3rem);
+  -moz-transform: translateY(3rem);
+  -ms-transform: translateY(3rem);
+  -o-transform: translateY(3rem);
+}
 
   .card .img-cont, .card img {
     height: 250px;

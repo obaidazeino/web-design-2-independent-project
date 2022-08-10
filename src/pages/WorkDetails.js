@@ -2,6 +2,7 @@ import React from 'react'
 import data from "../data"
 import { useParams } from 'react-router'
 import ScrollAnimation from 'react-animate-on-scroll';
+import withCursor from "../HOCs/withCursor";
 
 const WorkDetails = (props) => {
     let {workPage, detailsPage} = useParams()
@@ -12,10 +13,12 @@ const WorkDetails = (props) => {
 
     profile()
     console.log(profile())
+    const { onCursor } = props.context;
 
 
     return (
-        <div className="article">
+        <div className="article" onMouseEnter={{onCursor}}
+        onMouseLeave={onCursor}>
                 <h3>{object.title}</h3>
                 {object.image && <img src={object.image} alt="project"/>}
                 {!object.extened ? <p>{object.body}</p> : ""}
@@ -38,4 +41,4 @@ const WorkDetails = (props) => {
 }
 
 
-export default WorkDetails
+export default withCursor(WorkDetails)

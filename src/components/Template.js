@@ -40,19 +40,14 @@ console.log(props)
     return (
         <div className="template">
             <div 
-            onMouseEnter={() => onCursor("pointer")}
-            onMouseLeave={onCursor}
+        
             style={style} ref={ref1} className="rect rect-1"></div>
-            <div onMouseEnter={() => onCursor("pointer")}
-            onMouseLeave={onCursor} style={style} ref={ref2} className="rect rect-2"></div>
+            <div style={style} ref={ref2} className="rect rect-2"></div>
             {props.children}
             
-            <div onMouseEnter={() => onCursor("pointer")}
-            onMouseLeave={onCursor} style={style} ref={ref3} className="rect rect-4"></div>
-            <div onMouseEnter={() => onCursor("pointer")}
-            onMouseLeave={onCursor} style={style} ref={ref4} className="rect rect-5"></div>
-            {props.profile && <div onMouseEnter={() => onCursor("pointer")}
-            onMouseLeave={onCursor} ref={ref5} className="profile">
+            <div style={style} ref={ref3} className="rect rect-4"></div>
+            <div style={style} ref={ref4} className="rect rect-5"></div>
+            {props.profile && <div ref={ref5} className="profile">
                 <img src={profile} alt=""/>
             </div>}
             

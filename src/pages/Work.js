@@ -25,23 +25,23 @@ const Work = (props) => {
     let content = data.find(item => item.id === workPage).content.map(item =>
         {return(
 <ScrollAnimation animateIn="fadeIn" delay="150">
-
-            <div className="card" onMouseEnter={onCursor}
+<Link to={`${workPage}/${item.id}`}>
+            <div className="card" onMouseEnter={() => {(item.link) ? onCursor("default") : onCursor("pointer")}}
         onMouseLeave={onCursor}>
                 {item.image && <div className='img-cont'><img src={item.image}/></div>}
                 <div className="card-text">
                     <h3>{item.title}</h3>
-                    <p>{item.body}</p>
+                    {!item.image && <p>{item.body}</p>}
                     <time>{item.date}</time>
-                    {item.link ? 
+                    {item.link &&
                         <div>
                             <a className="dev-visit" href={item.link}>Visit</a>
                             <a href={item.source}>Source</a>
-                        </div> :
-                        <Link to={`${workPage}/${item.id}`}>See more</Link>
+                        </div> 
                         }
                 </div>
             </div> 
+            </Link>
             </ScrollAnimation>
 
         )}
